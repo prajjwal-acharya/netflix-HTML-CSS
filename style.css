@@ -1,0 +1,456 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background: #000;
+    color: #fff;
+}
+
+.header{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.8)), url(./images/netflix-system-design-cover.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 10px 8%;
+    position: relative;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.logo{
+    width: 150px;
+    cursor: pointer;
+}
+
+nav button{
+    border: 0;
+    outline: 0;
+    background: #db0001;
+    color: #fff;
+    padding: 9px 21px;
+    font-size: 13px;
+    border-radius: 4px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+
+.language-btn {
+    display: inline-flex; 
+    align-items: center;
+    font-size: 13px;
+    justify-content: space-between; 
+    padding: 10px 10px; 
+    background-color: rgba(0, 0, 0, 0.2); 
+    color: white; 
+    border: none; 
+    cursor: pointer; 
+}
+
+
+.language-btn img {
+    width: 18px; 
+    height: 18px; 
+    margin-right: 8px; 
+}
+#img1 {
+    height: 10px;
+}
+#img2 {
+    height: 4px;
+    margin-left: 5px; /* Adjust spacing between images and text */
+}
+
+.language-btn span {
+    margin: 0 5px; /* Adjust spacing between text and images */
+}
+ 
+
+.header-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: -50%;
+    translate: -50%;
+    text-align: center;
+    margin-top: 50pxpx;
+}
+
+.header-content h1{
+    font-size: 60px;
+    line-height: 70px;
+    font-weight: 600;
+    max-width: 650px;
+    padding-bottom: 10px;
+}
+.header-content h3{
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+
+.email-signup{
+    background: black;
+    opacity: 100%;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    overflow: hidden;
+}
+
+.email-signup input{
+    background: black;
+    opacity: 100;
+    flex: 1;
+    border: 0;
+    margin-left: 20px;
+    outline: 0;
+}
+
+.email-signup button{
+    background: #db0001;
+    border: 0;
+    outline: 0;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 15px 30px;
+}
+
+/*.header image{
+    position: absolute;
+    bottom: 0;
+}*/
+
+.pricing{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.pricing h2{
+    padding-top: 50px;
+    padding-left: 210px;  
+}
+
+.price-card-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 25px;
+}
+
+.pricing .card{
+    width: 300px;
+    height: 250px;
+    background-image: linear-gradient(rgba(225,12,76, 0.8), rgba(225,12,76,0.3));
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.3);
+    overflow: hidden;
+    transition: transform 0.5s ease;
+    cursor: pointer;
+}
+
+.pricing .card:hover{
+    transform: translateY(-10px);
+}
+
+.pricing .card-content h2{
+    padding-top: 30px;
+    padding-left: 25px;
+    padding-bottom: 10px;
+}
+
+.pricing .card-content p{
+    padding-top: 30px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 50px;
+    font-size: 20px;
+    color: rgba(225,225,225,0.8);
+}
+
+.pricing .card-content h4{
+    padding-left: 25px;
+    color: rgba(225, 225, 225, 0.85);
+}
+
+
+.features{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.features h2{
+    padding-top: 70px;
+    padding-left: 210px;
+}
+
+.feature-card-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 25px;
+}
+
+.features .card{
+    width: 300px;
+    height: 250px;
+    background-image: linear-gradient(rgba(44,24, 177, 0.8), rgba(192, 58, 167,0.3));
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.3);
+    overflow: hidden;
+    transition: transform 0.5s ease;
+    cursor: pointer;
+}
+
+.features .card:hover{
+    transform: translateY(10px);
+}
+
+.features .card-content h2{
+    padding-top: 30px;
+    padding-left: 25px;
+    padding-right: 22px;
+    padding-bottom: 10px;
+}
+
+.features .card-content p{
+    padding-top: 30px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 50px;
+    font-size: 20px;
+    color: rgba(225,225,225,0.8);
+}
+
+
+.slider-container{
+    padding: 2rem;
+    padding-left: 0rem;
+    padding-top: 8rem;
+}
+
+
+.slider-wrapper{
+    position: relative;
+    max-width: 60rem;
+    margin: 0 auto;    
+}
+
+.slider{
+    display: flex;
+    aspect-ratio: 16 / 9;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scrollbar-color: black;
+    background-color: #000;
+    scroll-behavior: smooth;
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0,0%,0%,0.55);
+    border-radius: 0.5rem;
+}
+
+.slider img{
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    object-fit: cover;    
+}
+
+.slider-nav{
+    display: flex;
+    column-gap: 1rem;
+    position: absolute;
+    bottom: 1.25rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.slider-nav a{
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: 0.75;
+    transition: opacity ease 250ms;
+}
+
+.slider-nav a:hover{
+    opacity: 1;
+}
+
+.slider-container h2{
+    color: #db0001;
+    font-size: 40px;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+
+
+.faq{
+    padding: 10px 12%;
+    padding-top: 70px;
+    text-align: left;
+    font-size: 18px;
+}
+
+.faq h2{
+    font-size: 28px;
+}
+
+.accordion{
+    margin-top: 30px;
+    margin-bottom: 50px;
+    width: 100%;
+    max-width: 750px;
+}
+
+.accordion li{
+    list-style: none;
+    width: 100%;
+    padding: 5px;
+}
+
+.accordion li label{
+    display: flex;
+    align-items: left;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: 500;
+    background: #303030;
+    margin-bottom: 2px;
+    cursor: pointer;
+    position: relative;
+}
+
+label::after{
+    content: "+";
+    font-size: 30px;
+    position: absolute;
+    right: 20px;
+}
+
+input[type="radio"]{
+    display: none;
+}
+
+
+.accordion .content{
+    background: #303030;
+    text-align: left;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s, padding 0.5s;
+    
+}
+
+.accordion input[type="radio"]:checked + label + .content{
+    max-height: 600px;
+    padding: 30px;
+}
+
+
+
+
+.footer {
+    padding: 50px 15% 10px;
+    padding-right: 0;
+    border-top: 6px solid #333;
+    color: #777;
+}
+
+.footer h2{
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.footer .col{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    margin-bottom: 20px;
+}
+
+.footer .col a{
+    display: block;
+    text-decoration: none;
+    color: #777;
+    font-size:14px;
+    margin-bottom: 10px;
+}
+
+.footer .row{
+    align-items: flex-start;
+    padding: 10px 0;
+}
+
+.footer .row .col {
+    display: inline-block;
+    margin-right: 10px;
+    width: 22%;
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.footer .language-btn{
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 3px;
+}
+
+.copyright{
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+
+@media only screen and (max-width: 600px){
+    .logo{
+        width: 100px;
+    }
+    nav button{
+        padding: 5px 10px;
+    }
+    nav .language-btn{
+        padding: 4px 8px;
+    }
+    .header-content{
+        align-items: top;
+        transform: none ;
+        padding-top: 0px;
+    }
+    .header-content h1{
+        font-size: 30px;
+    }
+    .email-signup button{
+        font-size: 12px ;
+        padding: 10px 15px;
+    }
+
+}
+
+
+
+
+
+
